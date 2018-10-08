@@ -104,6 +104,7 @@ var displayData = function(data, user) {
   });
 };
 
+// sending messages to the server with POST Method
 var postData = function(message, username) {
   $.ajax({
     url: SERVER_URL,
@@ -115,6 +116,8 @@ var postData = function(message, username) {
     }),
     success: function(data) {
       console.log('Success!', data);
+      // when server get POST method succesfully, message appears in the chat log
+      getData();
     },
     error: function(data) {
       console.log(data);

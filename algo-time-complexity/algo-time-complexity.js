@@ -13,7 +13,7 @@ var TimeComplexity = {
 };
 
 
-var sortedIndexOfTimeComplexity =  TimeComplexity.CONSTANT; // TODO: Update this constant
+var sortedIndexOfTimeComplexity =  TimeComplexity.LOGARITHMIC; // TODO: Update this constant
 
 var sortedIndexOf = function(array, targetElement) {
   var minIndex = 0;
